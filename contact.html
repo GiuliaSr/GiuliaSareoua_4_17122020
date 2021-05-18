@@ -11,20 +11,19 @@
         <meta name="robots" content="INDEX, FOLLOW" />
         <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap-min.css" />
+        <link rel="stylesheet" type="text/css" href="style-min.css" />
         <link
             rel="stylesheet"
             type="text/css"
-            href="./css/font-awesome.min.css"
+            href="./css/font-awesome-min.css"
         />
-        <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
-
-        <script src="./js/jquery-2.1.0.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/blocs.min.js"></script>
-        <script src="./js/jqBootstrapValidation.js"></script>
-        <script src="./js/formHandler.js"></script>
+        <link
+            rel="preload"
+            type="text/css"
+            href="./css/et-line-min.css"
+            as="font"
+        />
 
         <!-- Analytics -->
 
@@ -41,6 +40,7 @@
                             <a class="navbar-brand" href="index.html"
                                 ><img
                                     src="img/LOGO_la-chouette-agence.png"
+                                    class="logo-header"
                                     alt="paris web design logo agence web meilleure agence"
                                     height="40"
                             /></a>
@@ -62,17 +62,11 @@
                         >
                             <ul class="site-navigation nav navbar-nav">
                                 <li>
-                                    <a href="#bloc-2-services">
-                                        Nos prestations</a
-                                    >
+                                    <a href="index.html"> Accueil</a>
                                 </li>
+
                                 <li>
-                                    <a href="#bloc-4-portfolio">
-                                        Nos réalisations
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Nous contacter</a>
+                                    <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -84,16 +78,20 @@
         <main class="page-container">
             <!-- bloc-6 -->
             <section
-                class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+                class="bloc bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper bg-contrast"
                 id="bloc-6"
             >
                 <div class="container bloc-lg">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="text-center hero-bloc-text">
+                            <h1
+                                class="text-center hero-bloc-text contrast tc-white"
+                            >
                                 Parlons web design !
                             </h1>
-                            <p class="text-center mg-lg tight-width-whitespace">
+                            <p
+                                class="text-center mg-lg tight-width-whitespace text-c white"
+                            >
                                 Nous sommes ravis que vous souhaitiez collaborer
                                 avec notre agence.<br />
                                 Parlez-nous de votre projet en complétant le
@@ -106,95 +104,98 @@
             <!-- bloc-6 END -->
 
             <!-- bloc-7 -->
-            <section class="bloc bgc-white l-bloc" id="bloc-7">
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <h2>Formulaire de contact</h2>
-                        <div class="col-sm-6">
-                            <form
-                                id="form_1"
-                                novalidate
-                                success-msg="Your message has been sent."
-                                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-                            >
-                                <div class="form-group">
-                                    <label> Nom </label>
-                                    <input
-                                        id="name"
-                                        class="form-control"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label> Adresse email </label>
-                                    <input
-                                        id="email"
-                                        class="form-control"
-                                        type="email"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label>
-                                        Comment nous avez-vous connu ?
-                                    </label>
-                                    <input
-                                        class="form-control"
-                                        type="email"
-                                        required
-                                        id="input_504"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label>
-                                        Brief de votre projet (Ajoutez autant de
-                                        détails que nécessaire)<br /> </label
-                                    ><textarea
-                                        id="message"
-                                        class="form-control"
-                                        rows="4"
-                                        cols="50"
-                                        required
-                                    ></textarea>
-                                </div>
-                                <button
-                                    class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                                    type="submit"
+            <div class="container-page">
+                <section class="bloc bgc-white l-bloc" id="bloc-7">
+                    <div class="container bloc-lg formulaire">
+                        <div class="row formulaire">
+                            <h2>Formulaire de contact</h2>
+                            <div class="col-sm-6">
+                                <form
+                                    id="form_1"
+                                    novalidate
+                                    success-msg="Your message has been sent."
+                                    fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
                                 >
-                                    Envoyer
-                                </button>
-                            </form>
+                                    <div class="form-group">
+                                        <label>
+                                            Nom
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                class="form-control"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            Adresse email
+                                            <input
+                                                id="email"
+                                                class="form-control"
+                                                type="email"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            Comment nous avez-vous connu ?
+
+                                            <input
+                                                class="form-control"
+                                                type="text"
+                                                required
+                                                id="input_504"
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            Brief de votre projet (Ajoutez
+                                            autant de détails que nécessaire)<br />
+                                            <textarea
+                                                id="message"
+                                                class="form-control"
+                                                rows="4"
+                                                cols="50"
+                                                required
+                                            ></textarea>
+                                        </label>
+                                    </div>
+                                    <button
+                                        class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+                                        type="submit"
+                                    >
+                                        Envoyer
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- bloc-7 END -->
-            <section class="localisation">
-                <h2>Nous trouver à Lyon</h2>
-                <div class="col-sm-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0831373652145!2d4.827978615567682!3d45.76952407910573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Place%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1620367807729!5m2!1sfr!2sfr"
-                        width="600"
-                        height="450"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                    ></iframe>
-                    <div class="localisation_info--mail">
-                        <h3>Adresse mail</h3>
-                        <p>contact@lachouetteagence.com</p>
+                </section>
+
+                <!-- bloc-7 END -->
+                <section class="localisation localisation-container">
+                    <h2>Nous trouver à Lyon</h2>
+                    <div class="col-sm-6 localisation">
+                        <div class="localisation_info--mail localisation">
+                            <h3>Adresse mail</h3>
+                            <p>contact@lachouetteagence.com</p>
+                        </div>
+                        <div class="localisation_info--adress localisation">
+                            <h3>Adresse de nos bureaux</h3>
+                            <p>2 place Sathonay</p>
+                            <p>69001 Lyon</p>
+                        </div>
+                        <div class="localisation_info--horaire localisation">
+                            <h3>Nos horaires d'ouverture</h3>
+                            <p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+                        </div>
                     </div>
-                    <div class="localisation_info--adress">
-                        <h3>Adresse de nos bureaux</h3>
-                        <p>2 place Sathonay</p>
-                        <p>69001 Lyon</p>
-                    </div>
-                    <div class="localisation_info--horaire">
-                        <h3>Nos horaires d'ouverture</h3>
-                        <p>Ouvert de 9h à 18h, du lundi au vendredi</p>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
             <!-- ScrollToTop Button -->
             <a
                 class="bloc-button btn btn-d scrollToTop"
@@ -214,7 +215,7 @@
                             <div class="row row-no-gutters social">
                                 <div class="col-sm-3">
                                     <div class="text-center">
-                                        <a class="social" href="index.html"
+                                        <a class="twitter" href="index.html"
                                             ><span
                                                 class="fa fa-twitter icon-md"
                                             ></span
@@ -223,7 +224,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="text-center">
-                                        <a class="social" href="index.html"
+                                        <a class="facebook" href="index.html"
                                             ><span
                                                 class="fa fa-facebook icon-md"
                                             ></span
@@ -241,7 +242,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="text-center">
-                                        <a class="social" href="index.html"
+                                        <a class="instagram" href="index.html"
                                             ><span
                                                 class="fa fa-instagram icon-md"
                                             ></span
@@ -257,4 +258,10 @@
         </main>
         <!-- Principal conteneur END -->
     </body>
+
+    <script src="./js/jquery-2.1.0-min.js"></script>
+    <script src="./js/bootstrap-min.js"></script>
+    <script src="./js/blocs-min.js"></script>
+    <script src="./js/jqBootstrapValidation-min.js"></script>
+    <script src="./js/formHandler-min.js"></script>
 </html>

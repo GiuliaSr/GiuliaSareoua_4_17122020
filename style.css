@@ -93,6 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    background-color: rgba(73, 59, 47, 0.3);
 }
 
 .b-parallax {
@@ -773,7 +774,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #eec699;
+    background-color: #80684d;
 }
 
 .tc-white {
@@ -1086,4 +1087,38 @@ h4 {
 }
 * {
     box-sizing: border-box;
+}
+.formulaire {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.localisation {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.localisation-container {
+    margin-bottom: 100px;
+}
+.contrast {
+    font-weight: 800;
+}
+.text-c {
+    color: #fff;
+    font-size: 18px;
+}
+.size {
+    font-size: 15px;
+}
+.text {
+    position: relative;
+}
+.logo-header {
+    width: 50%;
+    height: 50%;
 }

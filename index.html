@@ -21,16 +21,22 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         />
+
         <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
         <link
             rel="preload"
             type="text/css"
             href="./css/font-awesome-min.css"
-            as="font"
-            type="font/woff2"
-            crossorigin
+            as="style"
         />
-        <link rel="stylesheet" type="text/css" href="./css/et-line-min.css" />
+        <link rel="stylesheet" href="./css/font-awesome-min.css" />
+        <link
+            rel="preload"
+            type="text/css"
+            href="./css/et-line-min.css"
+            as="style"
+        />
+        <link rel="stylesheet" href="./css/et-line-min.css" />
         <link rel="stylesheet" type="text/css" href="./css/bootstrap-min.css" />
         <link rel="stylesheet" type="text/css" href="style-min.css" />
 
@@ -49,7 +55,6 @@
                                     src="img/LOGO_la-chouette-agence.png"
                                     class="logo-header"
                                     alt="paris web design logo agence web meilleure agence"
-                                    height="40"
                             /></a>
                             <button
                                 id="nav-toggle"
@@ -94,14 +99,20 @@
                         <div class="col-sm-12">
                             <img
                                 src="img/logo.png"
-                                class="center-block image-resize-mode"
-                                width="100"
+                                class="center-block image-resize-mode banniere-image"
                                 alt="La chouette agence, agence web paris, création logo paris"
                             />
                             <h1 class="text-center hero-bloc-text tc-white">
                                 La chouette agence <br />
                                 Votre agence de web design à Lyon !
                             </h1>
+                            <div class="col-sm-12 text-center">
+                                <a
+                                    href="contact.html"
+                                    class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"
+                                    >Contact</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,8 +126,8 @@
                         <div class="col-sm-12 text-center">
                             <h2>
                                 La Chouette agence est une agence de web design
-                                qui aide les entreprises à devenir attractives
-                                et visibles sur internet
+                                qui aide <br />les entreprises à devenir
+                                attractives et visibles sur internet
                             </h2>
                         </div>
                     </header>
@@ -231,8 +242,8 @@
                     <header class="row">
                         <div class="col-sm-12 text-center">
                             <h2>
-                                Nous travaillons avec beaucoup de clients, voici
-                                nos réalisations.
+                                Nous travaillons avec beaucoup de clients,
+                                <br />voici nos réalisations.
                             </h2>
                         </div>
                     </header>
@@ -247,7 +258,7 @@
                                 ><img
                                     src="img/1_journal-small.jpg"
                                     alt="paris web design logo agence web meilleure agence et refonte site web journal"
-                                    class="img-responsive portfolio-thumb"
+                                    class="img-responsive portfolio-thumb imag-portfolio-size"
                             /></a>
                             <h3 class="mg-md text-center">
                                 Refonte d'un site web pour un journal local
@@ -266,7 +277,7 @@
                                 data-frame="snapshot-lb"
                                 ><img
                                     src="img/2_photographe-small.jpg"
-                                    class="img-responsive portfolio-thumb"
+                                    class="img-responsive portfolio-thumb imag-portfolio-size"
                                     alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"
                             /></a>
                             <h3 class="mg-md text-center">
@@ -288,7 +299,7 @@
                                 data-frame="snapshot-lb"
                                 ><img
                                     src="img/3_voyageur-small.jpg"
-                                    class="img-responsive portfolio-thumb"
+                                    class="img-responsive portfolio-thumb imag-portfolio-size"
                                     alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"
                             /></a>
                             <h3 class="mg-md text-center">
@@ -309,7 +320,7 @@
                                 data-frame="snapshot-lb"
                                 ><img
                                     src="img/4_mariage-small.jpg"
-                                    class="img-responsive portfolio-thumb"
+                                    class="img-responsive portfolio-thumb imag-portfolio-size imag-portfolio-size"
                                     alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"
                             /></a>
                             <h3 class="mg-md text-center">
@@ -402,21 +413,16 @@
                                         <a
                                             href="https://www.auvergnerhonealpes.fr/"
                                         >
-                                            <img
-                                                src="img/Logo-Region-Noir-PNG-RVB.png"
-                                                class="logoregion"
-                                                alt="Logo de la région Auvergne Rhone Alpes"
-                                        /></a>
+                                            <p class="white">
+                                                La Région Auvergne Rhône Alpes
+                                            </p>
+                                        </a>
                                     </li>
                                     <li>
                                         <a
                                             href="https://www.creditmutuel.fr/home/index.html"
                                         >
-                                            <img
-                                                class="logoregion"
-                                                src="img/logo-banque.png"
-                                                alt="Logo du partenaire Crédit mutuel"
-                                            />
+                                            <p class="white">Crédit Mutuel</p>
                                         </a>
                                     </li>
                                 </ul>

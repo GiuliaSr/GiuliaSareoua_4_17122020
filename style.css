@@ -1045,6 +1045,7 @@ h4 {
 }
 .quotestyle {
     font-size: 20px;
+    font-style: italic;
 }
 .quotestyle-1 {
     font-size: 15px;
@@ -1074,17 +1075,16 @@ h4 {
 }
 .partenaires ul {
     width: 40%;
-    display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0;
 }
 .footerh3 {
     margin-bottom: 1rem;
 }
-.logoregion {
-    width: 15rem;
-    margin-top: 1rem;
-}
+
 * {
     box-sizing: border-box;
 }
@@ -1119,6 +1119,14 @@ h4 {
     position: relative;
 }
 .logo-header {
-    width: 50%;
-    height: 50%;
+    width: 214.44px;
+    height: 40px;
+}
+.banniere-image {
+    width: 75px;
+    height: 75px;
+}
+.imag-portfolio-size {
+    width: 100%;
+    height: 100%;
 }
